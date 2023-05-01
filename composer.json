@@ -15,7 +15,7 @@
 		"silverstripe/multivaluefield": "*",
 		"silverstripe/vendor-plugin": "^1.6",
 		"silverstripe/queuedjobs": "^4.9",
-		"symbiote/silverstripe-multivaluefield": "^4.0",
+		"symbiote/silverstripe-multivaluefield": "^5.0",
 		"symbiote/silverstripe-gridfieldextensions": "^3.6"
 	},
 	"config": {
