@@ -1,7 +1,7 @@
 {
 	"name": "silverstripe-australia/advancedreports",
 	"description": "A reporting module that provides an extra level of configuration and functionality over the base SilverStripe structures. Generates static output content in HTML, CSV and PDF formats.",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"keywords": ["silverstripe", "reports"],
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -11,15 +11,29 @@
 		}
 	],
 	"require": {
-		"silverstripe/cms": "~3.1",
-		"silverstripe/multivaluefield": "*"
+		"silverstripe/cms": "^4",
+		"silverstripe/multivaluefield": "*",
+		"silverstripe/vendor-plugin": "^1.6",
+		"silverstripe/queuedjobs": "^4.9",
+		"symbiote/silverstripe-multivaluefield": "^4.0",
+		"symbiote/silverstripe-gridfieldextensions": "^3.6"
 	},
-	"extra": {
-		"branch-alias": {
-			"dev-master": "2.4.x-dev"
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"silverstripe/vendor-plugin": true
 		}
 	},
-	"suggest": {
-		"silverstripe/queuedjobs": "Allows scheduling report generation"
-	}
+    "autoload": {
+        "psr-4": {
+            "SilverstripeAustralia\\AdvancedReports\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "css",
+            "images",
+            "javascript"
+        ]
+    }
 }

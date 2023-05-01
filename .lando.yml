@@ -1,0 +1,19 @@
+name: php-cli-test
+
+services:
+  php:
+    type: php:7.4
+    via: cli
+    composer_version: 2
+    build:
+      - cd /tmp && wget https://silverstripe.github.io/silverstripe-upgrader/upgrade-code.phar
+      - chmod +x /tmp/upgrade-code.phar
+      - mv /tmp/upgrade-code.phar /usr/local/bin/upgrade-code
+
+tooling:
+  php:
+    service: php
+  composer:
+    service: php
+  upgrade-code:
+    service: php
