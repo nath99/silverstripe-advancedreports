@@ -1,0 +1,7 @@
+SilverStripe\ORM\DatabaseAdmin:
+  classname_value_remapping:
+    AdvancedReport: SilverstripeAustralia\AdvancedReports\Models\AdvancedReport
+    DataObjectReport: SilverstripeAustralia\AdvancedReports\Models\DataObjectReport
+    FreeformReport: SilverstripeAustralia\AdvancedReports\Models\FreeformReport
+    RelatedReport: SilverstripeAustralia\AdvancedReports\Models\RelatedReport
+    ReportPage: SilverstripeAustralia\AdvancedReports\Pages\ReportPage
