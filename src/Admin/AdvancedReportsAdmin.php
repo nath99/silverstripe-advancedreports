@@ -19,7 +19,7 @@ class AdvancedReportsAdmin extends ModelAdmin
 
     private static $url_segment = 'advanced-reports';
 
-    private static $menu_icon = 'images/bar-chart.png';
+    private static $menu_icon = 'silverstripe-australia/advancedreports:images/bar-chart.png';
 
     private static $model_importers = array();
 
