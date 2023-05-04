@@ -39,7 +39,7 @@ class ReportPage extends SiteTree
     );
 
     private static $dependencies = array(
-        'reportsService' => '%$AdvancedReportsServiceInterface'
+        'reportsService' => '%$' . AdvancedReportsServiceInterface::class
     );
 
     /**
