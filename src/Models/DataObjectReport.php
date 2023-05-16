@@ -17,6 +17,7 @@ use SilverStripe\ORM\DataList;
  */
 class DataObjectReport extends AdvancedReport
 {
+    private static $table_name = "AdvancedReports_DataObjectReport";
 
     private static $db = array(
         'ReportOn'            => 'Varchar(64)',

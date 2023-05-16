@@ -25,6 +25,8 @@ use Symbiote\MultiValueField\Fields\KeyValueField;
  */
 class RelatedReport extends DataObject
 {
+    private static $table_name = "AdvancedReports_RelatedReport";
+
     private static $db = array(
         'Title'            => 'Varchar',
         'Parameters'    => 'MultiValueField',

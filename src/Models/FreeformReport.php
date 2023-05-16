@@ -31,6 +31,7 @@ use Symbiote\MultiValueField\Fields\KeyValueField;
  */
 class FreeformReport extends AdvancedReport
 {
+    private static $table_name = "AdvancedReports_FreeformReport";
 
     private static $allow_grouping = true;
 

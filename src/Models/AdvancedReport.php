@@ -99,6 +99,8 @@ class AdvancedReport extends DataObject implements PermissionProvider
         'IsNull:not' => 'IS NOT NULL'
     );
 
+    private static $table_name = "AdvancedReports_AdvancedReport";
+
     private static $db = array(
         'Title'                        => 'Varchar(128)',
         'GeneratedReportTitle'        => 'Varchar(128)',

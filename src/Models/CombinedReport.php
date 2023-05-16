@@ -24,6 +24,8 @@ use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
  */
 class CombinedReport extends AdvancedReport
 {
+    private static $table_name = "AdvancedReports_CombinedReport";
+
     private static $db = array();
 
     private static $has_many = array(
